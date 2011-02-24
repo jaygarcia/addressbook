@@ -8,6 +8,23 @@
     <script type="text/javascript" src="resources/js/ext-3.1.1/ext-all-debug.js"></script>
 
 
+    <script type="text/javascript" src="resources/js/MyApp/AppPanel.js"></script>
+    <script type="text/javascript" src="resources/js/MyApp/ContactFormPanel.js"></script>
+    <script type="text/javascript" src="resources/js/MyApp/ContactListPanel.js"></script>
+    <script type="text/javascript" src="resources/js/MyApp/ContactListView.js"></script>
+
+    <script type="text/javascript">
+        Ext.onReady(function() {
+            new Ext.Viewport({
+                layout : 'fit',
+                items  : {
+                    xtype : 'MyApp.AppPanel'
+                }
+            });
+        });
+
+
+    </script>
 
 </head>
 <body>
